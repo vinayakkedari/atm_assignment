@@ -1,0 +1,126 @@
+{
+	"info": {
+		"name": "atm_assignment",
+		"_postman_id": "cc0e1b0b-6061-4e96-969b-854e302fbd07",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:7000/registerUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cardNum\": \"12345678\",\n\t\"cardPin\": \"1234\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7000/registerUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"registerUser"
+					]
+				},
+				"description": "Register New user"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7000/authenticateUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cardNum\": \"12345678\",\n\t\"cardPin\": \"1234\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7000/authenticateUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"authenticateUser"
+					]
+				},
+				"description": "Authenticate User"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7000/depositeAmount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cardNum\" : \"12345678\",\n\t\"notes\" : {\n\t\t\"twoThousandNotes\": 0,\n\t\t\"fiveHundredNotes\": 0,\n\t\t\"hundredNotes\": 0\n\t}\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7000/depositeAmount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"depositeAmount"
+					]
+				},
+				"description": "Deposite notes/amount"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:7000/withdrawAmount",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"cardNum\" : \"12345678\",\n\t\"amount\" : 1000\n}"
+				},
+				"url": {
+					"raw": "http://localhost:7000/withdrawAmount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"withdrawAmount"
+					]
+				},
+				"description": "Withdraw amount"
+			},
+			"response": []
+		}
+	]
+}
