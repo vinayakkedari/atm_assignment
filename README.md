@@ -1,6 +1,6 @@
 # atm_assignment
 
-#Author: Vinayak Kedari.
+### Author: Vinayak Kedari.
 
 **To Install dependencies**
 ```
@@ -12,7 +12,9 @@ $ npm install
 $ 'npm start' OR 'node server/server.js'
 ```
 
-#APIs
+## APIs
+
+You can also import the postman collection 'atm_assignment.postman_collection.json'
 
 **1. Register a user's card (8-digits) and ATM Pin (4-digits)**
 ```
