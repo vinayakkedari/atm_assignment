@@ -10,7 +10,7 @@ $ node server.js
 
 #APIs
 
-**1. Register a user's card (8-digits) and ATM Pin (4-digits)**\n
+**1. Register a user's card (8-digits) and ATM Pin (4-digits)**
 Request:
 URL: http://localhost:7000/registerUser
 Body: {
@@ -23,7 +23,7 @@ Response:
     "message": "User created succesfully."
 }
 
-#2. Authentication API to validate the user
+**2. Authentication API to validate the user**
 Request:
 URL: http://localhost:7000/authenticateUser
 Body: {
@@ -36,7 +36,7 @@ Response:
     "message": "User Authenticated."
 }
 
-#3. Deposit the money
+**3. Deposit the money**
 Request:
 URL: http://localhost:7000/depositeAmount
 Body: {
@@ -49,7 +49,7 @@ Response:
     "message": "Deposited 1000 succesfully. Available balance is: 3000"
 }
 
-#4. Withdraw the money
+**4. Withdraw the money**
 Request:
 URL: http://localhost:7000/withdrawAmount
 Body: {
