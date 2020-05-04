@@ -16,6 +16,7 @@ $ 'npm start' OR 'node server/server.js'
 
 You can also import the postman collection 'atm_assignment.postman_collection.json'
 
+
 **1. Register a user's card (8-digits) and ATM Pin (4-digits)**
 ```
 Request:
