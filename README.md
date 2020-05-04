@@ -8,9 +8,9 @@ $ npm install
 **To start the server**
 $ node server.js
 
-##APIs
+#APIs
 
-#1. Register a user's card (8-digits) and ATM Pin (4-digits)
+**1. Register a user's card (8-digits) and ATM Pin (4-digits)**\n
 Request:
 URL: http://localhost:7000/registerUser
 Body: {
